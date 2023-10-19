@@ -1,0 +1,3 @@
+/home/elton/workspace/pico-c/audio_modem/build/pioasm/CMakeFiles/pioasm.dir
+/home/elton/workspace/pico-c/audio_modem/build/pioasm/CMakeFiles/edit_cache.dir
+/home/elton/workspace/pico-c/audio_modem/build/pioasm/CMakeFiles/rebuild_cache.dir
