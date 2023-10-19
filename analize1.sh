@@ -13,10 +13,8 @@
 89
 90
 90
-
 101; isso e um zero (0,0070 audacity)
 148;
-
 72
 98
 96
@@ -26,17 +24,12 @@
 91
 90
 96
-
 148 ;zero entre dois uns tem a tendencia de uma unica medicao (0,00120 audacity)
-
 91
 104
 85
 103 
-
-
 147 ; zero (0,0145 audacity)
-
 64
 89
 98

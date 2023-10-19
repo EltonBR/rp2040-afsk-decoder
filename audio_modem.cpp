@@ -6,7 +6,6 @@
 #include<inttypes.h>
 #include<list>
 #define forx(i, sizemax) for(int i = 0; i <= sizemax; i++)
-
 #define SAMPLE_SIZE 10000
 
 typedef struct {
@@ -15,7 +14,6 @@ typedef struct {
     uint16_t bit1min;    
     uint16_t bit1max;    
 } bits_value_range_t;
-
 
 void sort(uint16_t*ptr, uint16_t len) {
 rpt:
@@ -32,41 +30,30 @@ rpt:
     if (needsRepeat) {
         goto rpt;
     }
-
 }
 
-
 uint64_t tt = time_us_64();
-uint64_t lastcallt = time_us_64();
-uint64_t lastcallt2 = time_us_64();
-void edgeUp(uint16_t val) {    
+
+void store_start_time(uint16_t val) {    
     if (val == 3000) {
         tt = time_us_64();
     }
 }
 
-uint64_t edgeDown(uint16_t val) {
+uint64_t get_start_end_diff(uint16_t val) {
     if(val == 2500) {
         return time_us_64()-tt;
     }
     return 0;
 }
 
-uint64_t timers = time_us_64();
 void __not_in_flash_func(rx_func)() {
-    uint16_t index2 = 0;
     uint16_t index = 0;
     uint16_t buff[SAMPLE_SIZE] = {'\0'} ;
-    uint16_t peaks[SAMPLE_SIZE] = {'\0'}; 
     while(1) {
 
         uint16_t adc_val = adc_read();
-        //printf("%i\n", adc_val);
-
-        if (index2 < SAMPLE_SIZE) {
-            peaks[index2++] = adc_val;
-        }
-
+        //set min max limits
         if (adc_val < 2500) {
             adc_val = 2500;
         }
@@ -74,36 +61,38 @@ void __not_in_flash_func(rx_func)() {
         if (adc_val > 3000) {
             adc_val = 3000;
         }
-
+        //detect up start counter
         if (adc_val > 2500) {
-            edgeUp(adc_val);
+            store_start_time(adc_val);
         }
-        
+        //detect down stop
         if (adc_val < 3000) {
-            buff[index] = edgeDown(adc_val);
+
+            //get time diff us and store to proccess data
+            buff[index] = get_start_end_diff(adc_val);
             index++;
-            uint16_t cc = 0;
-            uint16_t prevRead = 0;
+            uint16_t sequence_counter = 0; //quantity of adc samples per wave cicle
+
             if (index > SAMPLE_SIZE) {
                 for(int x = 0; x < SAMPLE_SIZE; x++) {
                         
                     if (buff[x] > 0) { //count a sequence > 0
-                        cc++; //counting
+                        sequence_counter++; //counting
                     } else{
                         //done count
                         int bit = 2;
-                        if (cc != 0) {
-                            if (cc > 30 && cc < 125) {
+                        if (sequence_counter != 0) {
+                            if (sequence_counter > 30 && sequence_counter < 125) {
                                 bit = 1;
                             }
-                            if (cc > 135 && cc < 170) {
+                            if (sequence_counter > 135 && sequence_counter < 170) {
                                 bit = 0;
                             }
 
-                            printf("%i\t%i\n",bit, cc);
-                            prevRead = cc;
+                            printf("%i\t%i\n",bit, sequence_counter);
+
                         }
-                        cc=0;
+                        sequence_counter=0;
                     }
                 }
                 index = 0;
@@ -116,34 +105,26 @@ void __not_in_flash_func(rx_func)() {
 }
 
 int main() {
-    //set_sys_clock_khz(125e3, true);
-    bool runrx = true; 
+
     stdio_init_all();
     gpio_init(25);
     gpio_set_dir(25, GPIO_OUT);
     gpio_put(25, 1);
+    
     adc_init();
     adc_select_input(2);
     adc_gpio_init(28);
-    repeating_timer tt;
-
     adc_set_clkdiv(0);
     adc_run(false);
     
 
     while(1) {
-    
-    if (adc_read() > 2800) {
-        rx_func();
-    } else{
-        //printf("waiting start bit\n");
-    }
-       /* uint8_t opt = getchar();
-        if ( opt == 'c') {
-
-        } else if (opt == 'r') {
-
-        }*/
+        //start rx trigger
+        if (adc_read() > 2800) {
+            rx_func();
+        } else{
+            //printf("waiting start bit\n");
+        }
     }
 
     return 0;
