@@ -63,13 +63,9 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 CMakeFiles/audio_modem.dir/audio_modem.cpp.obj
  .text._Z4sortPtt
                 0x0000000000000000       0x30 CMakeFiles/audio_modem.dir/audio_modem.cpp.obj
- .rodata._Z24calculate_measure_pointsPtmtP18bits_value_range_t.str1.4
-                0x0000000000000000       0x38 CMakeFiles/audio_modem.dir/audio_modem.cpp.obj
- .text._Z24calculate_measure_pointsPtmtP18bits_value_range_t
-                0x0000000000000000      0x348 CMakeFiles/audio_modem.dir/audio_modem.cpp.obj
- .text._Z6edgeUpt
+ .text._Z16store_start_timet
                 0x0000000000000000       0x20 CMakeFiles/audio_modem.dir/audio_modem.cpp.obj
- .text._Z8edgeDownt
+ .text._Z18get_start_end_difft
                 0x0000000000000000       0x30 CMakeFiles/audio_modem.dir/audio_modem.cpp.obj
  .text          0x0000000000000000        0x0 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -1202,9 +1198,9 @@ Discarded input sections
  .text          0x0000000000000000        0x0 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
- .text          0x0000000000000000        0x0 /tmp/ccSNhfjP.o
- .data          0x0000000000000000        0x0 /tmp/ccSNhfjP.o
- .bss           0x0000000000000000        0x0 /tmp/ccSNhfjP.o
+ .text          0x0000000000000000        0x0 /tmp/ccKoKD0I.o
+ .data          0x0000000000000000        0x0 /tmp/ccKoKD0I.o
+ .bss           0x0000000000000000        0x0 /tmp/ccKoKD0I.o
  .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-atexit.o)
@@ -1468,11 +1464,11 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /tmp/ccSNhfjP.o
+ .boot2         0x0000000010000000      0x100 /tmp/ccKoKD0I.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x0000000010000100     0x6898
+.text           0x0000000010000100     0x6870
                 0x0000000010000100                __logical_binary_start = .
  *(.vectors)
  .vectors       0x0000000010000100       0xd4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1537,567 +1533,567 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x0000000010000354       0x88 CMakeFiles/audio_modem.dir/audio_modem.cpp.obj
                 0x0000000010000354                main
  .text.startup._GLOBAL__sub_I__Z4sortPtt
-                0x00000000100003dc       0x3c CMakeFiles/audio_modem.dir/audio_modem.cpp.obj
+                0x00000000100003dc       0x14 CMakeFiles/audio_modem.dir/audio_modem.cpp.obj
  .text.gpio_set_function
-                0x0000000010000418       0x30 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x0000000010000418                gpio_set_function
+                0x00000000100003f0       0x30 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x00000000100003f0                gpio_set_function
  .text.gpio_set_pulls
-                0x0000000010000448       0x30 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x0000000010000448                gpio_set_pulls
+                0x0000000010000420       0x30 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x0000000010000420                gpio_set_pulls
  .text.gpio_set_input_enabled
-                0x0000000010000478       0x28 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x0000000010000478                gpio_set_input_enabled
+                0x0000000010000450       0x28 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x0000000010000450                gpio_set_input_enabled
  .text.gpio_init
-                0x00000000100004a0       0x3c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x00000000100004a0                gpio_init
+                0x0000000010000478       0x3c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x0000000010000478                gpio_init
  .text.running_on_fpga
-                0x00000000100004dc       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-                0x00000000100004dc                running_on_fpga
+                0x00000000100004b4       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x00000000100004b4                running_on_fpga
  .text.hw_claim_or_assert
-                0x00000000100004ec       0x44 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x00000000100004ec                hw_claim_or_assert
+                0x00000000100004c4       0x44 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x00000000100004c4                hw_claim_or_assert
  .text.hw_claim_unused_from_range
-                0x0000000010000530       0x9c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x0000000010000530                hw_claim_unused_from_range
+                0x0000000010000508       0x9c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x0000000010000508                hw_claim_unused_from_range
  .text.spin_locks_reset
-                0x00000000100005cc       0x1c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x00000000100005cc                spin_locks_reset
+                0x00000000100005a4       0x1c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x00000000100005a4                spin_locks_reset
  .text.next_striped_spin_lock_num
-                0x00000000100005e8       0x18 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x00000000100005e8                next_striped_spin_lock_num
+                0x00000000100005c0       0x18 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x00000000100005c0                next_striped_spin_lock_num
  .text.spin_lock_claim_unused
-                0x0000000010000600       0x20 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x0000000010000600                spin_lock_claim_unused
+                0x00000000100005d8       0x20 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x00000000100005d8                spin_lock_claim_unused
  .text.irq_set_enabled
-                0x0000000010000620       0x24 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000620                irq_set_enabled
+                0x00000000100005f8       0x24 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000100005f8                irq_set_enabled
  .text.irq_set_pending
-                0x0000000010000644       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000644                irq_set_pending
+                0x000000001000061c       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x000000001000061c                irq_set_pending
  .text.irq_has_shared_handler
-                0x0000000010000654       0x2c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000654                irq_has_shared_handler
+                0x000000001000062c       0x2c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x000000001000062c                irq_has_shared_handler
  .text.irq_get_vtable_handler
-                0x0000000010000680       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000680                irq_get_vtable_handler
+                0x0000000010000658       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000658                irq_get_vtable_handler
  .text.irq_set_exclusive_handler
-                0x0000000010000690       0x54 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000690                irq_set_exclusive_handler
+                0x0000000010000668       0x54 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000668                irq_set_exclusive_handler
  .text.irq_add_shared_handler
-                0x00000000100006e4      0x1e8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100006e4                irq_add_shared_handler
+                0x00000000100006bc      0x1e8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000100006bc                irq_add_shared_handler
  .text.irq_remove_handler
-                0x00000000100008cc      0x1b0 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100008cc                irq_remove_handler
+                0x00000000100008a4      0x1b0 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000100008a4                irq_remove_handler
  .text.irq_add_tail_to_free_list
-                0x0000000010000a7c       0xb4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000a7c                irq_add_tail_to_free_list
+                0x0000000010000a54       0xb4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000a54                irq_add_tail_to_free_list
  .text.irq_init_priorities
-                0x0000000010000b30       0x24 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000b30                irq_init_priorities
+                0x0000000010000b08       0x24 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000b08                irq_init_priorities
  .text.user_irq_claim_unused
-                0x0000000010000b54       0x28 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000b54                user_irq_claim_unused
+                0x0000000010000b2c       0x28 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000b2c                user_irq_claim_unused
  .text.lock_init
-                0x0000000010000b7c       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                0x0000000010000b7c                lock_init
+                0x0000000010000b54       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x0000000010000b54                lock_init
  .text.mutex_init
-                0x0000000010000b8c       0x1c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x0000000010000b8c                mutex_init
+                0x0000000010000b64       0x1c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000010000b64                mutex_init
  .text.recursive_mutex_init
-                0x0000000010000ba8       0x1c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x0000000010000ba8                recursive_mutex_init
+                0x0000000010000b80       0x1c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000010000b80                recursive_mutex_init
  .text.critical_section_init
-                0x0000000010000bc4       0x20 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
-                0x0000000010000bc4                critical_section_init
+                0x0000000010000b9c       0x20 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+                0x0000000010000b9c                critical_section_init
  .text.critical_section_init_with_lock_num
-                0x0000000010000be4       0x14 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
-                0x0000000010000be4                critical_section_init_with_lock_num
+                0x0000000010000bbc       0x14 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+                0x0000000010000bbc                critical_section_init_with_lock_num
  .text.timer_pool_entry_comparator
-                0x0000000010000bf8       0x34 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000bf8                timer_pool_entry_comparator
+                0x0000000010000bd0       0x34 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000bd0                timer_pool_entry_comparator
  .text.sleep_until_callback
-                0x0000000010000c2c       0x30 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000c04       0x30 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.add_alarm_under_lock.isra.0
-                0x0000000010000c5c      0x100 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000c34      0x100 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_alarm_callback
-                0x0000000010000d5c      0x1bc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000d34      0x1bc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_init_default
-                0x0000000010000f18       0x6c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000f18                alarm_pool_init_default
+                0x0000000010000ef0       0x6c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000ef0                alarm_pool_init_default
  .text.alarm_pool_get_default
-                0x0000000010000f84        0x8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000f84                alarm_pool_get_default
+                0x0000000010000f5c        0x8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000f5c                alarm_pool_get_default
  .text.alarm_pool_add_alarm_at
-                0x0000000010000f8c      0x178 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000f8c                alarm_pool_add_alarm_at
+                0x0000000010000f64      0x178 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000f64                alarm_pool_add_alarm_at
  .text.alarm_pool_core_num
-                0x0000000010001104        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010001104                alarm_pool_core_num
+                0x00000000100010dc        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100010dc                alarm_pool_core_num
  .text.best_effort_wfe_or_timeout
-                0x0000000010001108       0xd4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010001108                best_effort_wfe_or_timeout
+                0x00000000100010e0       0xd4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100010e0                best_effort_wfe_or_timeout
  .text.hardware_alarm_irq_handler
-                0x00000000100011dc       0xbc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100011b4       0xbc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim
-                0x0000000010001298       0x18 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001298                hardware_alarm_claim
+                0x0000000010001270       0x18 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001270                hardware_alarm_claim
  .text.time_us_64
-                0x00000000100012b0       0x14 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x00000000100012b0                time_us_64
+                0x0000000010001288       0x14 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001288                time_us_64
  .text.hardware_alarm_set_callback
-                0x00000000100012c4       0x8c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x00000000100012c4                hardware_alarm_set_callback
+                0x000000001000129c       0x8c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x000000001000129c                hardware_alarm_set_callback
  .text.hardware_alarm_set_target
-                0x0000000010001350       0xd4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001350                hardware_alarm_set_target
+                0x0000000010001328       0xd4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001328                hardware_alarm_set_target
  .text.hardware_alarm_cancel
-                0x0000000010001424       0x3c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001424                hardware_alarm_cancel
+                0x00000000100013fc       0x3c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100013fc                hardware_alarm_cancel
  .text.ph_merge_nodes
-                0x0000000010001460       0x68 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001438       0x68 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_post_alloc_init
-                0x00000000100014c8       0x3c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x00000000100014c8                ph_post_alloc_init
+                0x00000000100014a0       0x3c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x00000000100014a0                ph_post_alloc_init
  .text.ph_merge_two_pass
-                0x0000000010001504       0x90 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001504                ph_merge_two_pass
+                0x00000000100014dc       0x90 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x00000000100014dc                ph_merge_two_pass
  .text.ph_remove_any_head
-                0x0000000010001594      0x100 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x000000001000156c      0x100 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_remove_head
-                0x0000000010001694      0x104 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001694                ph_remove_head
+                0x000000001000166c      0x104 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x000000001000166c                ph_remove_head
  .text.ph_remove_and_free_node
-                0x0000000010001798       0x7c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001798                ph_remove_and_free_node
+                0x0000000010001770       0x7c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001770                ph_remove_and_free_node
  .text.clocks_init
-                0x0000000010001814      0x2d0 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x0000000010001814                clocks_init
+                0x00000000100017ec      0x2d0 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x00000000100017ec                clocks_init
  .text.pll_init
-                0x0000000010001ae4       0xa0 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                0x0000000010001ae4                pll_init
+                0x0000000010001abc       0xa0 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x0000000010001abc                pll_init
  .text.watchdog_start_tick
-                0x0000000010001b84       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x0000000010001b84                watchdog_start_tick
+                0x0000000010001b5c       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x0000000010001b5c                watchdog_start_tick
  .text.watchdog_reboot
-                0x0000000010001b94       0x98 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x0000000010001b94                watchdog_reboot
+                0x0000000010001b6c       0x98 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x0000000010001b6c                watchdog_reboot
  .text.xosc_init
-                0x0000000010001c2c       0x28 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x0000000010001c2c                xosc_init
+                0x0000000010001c04       0x28 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x0000000010001c04                xosc_init
  .text.runtime_init
-                0x0000000010001c54       0xf0 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001c54                runtime_init
- .text._exit    0x0000000010001d44        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001d44                _exit
- .text.exit     0x0000000010001d48        0x8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001d48                exit
- .text.panic    0x0000000010001d50       0x30 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001d50                panic
+                0x0000000010001c2c       0xf0 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001c2c                runtime_init
+ .text._exit    0x0000000010001d1c        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001d1c                _exit
+ .text.exit     0x0000000010001d20        0x8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001d20                exit
+ .text.panic    0x0000000010001d28       0x30 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001d28                panic
  .text.hard_assertion_failure
-                0x0000000010001d80        0xc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001d80                hard_assertion_failure
+                0x0000000010001d58        0xc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001d58                hard_assertion_failure
  .text._out_null
-                0x0000000010001d8c        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010001d64        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_rev
-                0x0000000010001d90       0x9c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010001d68       0x9c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_format
-                0x0000000010001e2c      0x1cc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010001e04      0x1cc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_char
-                0x0000000010001ff8       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010001fd0       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_fct
-                0x0000000010002008       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._etoa    0x0000000010002018      0x44c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._ftoa    0x0000000010002464      0x398 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010001fe0       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._etoa    0x0000000010001ff0      0x44c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._ftoa    0x000000001000243c      0x398 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._vsnprintf
-                0x00000000100027fc      0xb04 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000100027d4      0xb04 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.vfctprintf
-                0x0000000010003300       0x20 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x0000000010003300                vfctprintf
+                0x00000000100032d8       0x20 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000100032d8                vfctprintf
  .text.weak_raw_vprintf
-                0x0000000010003320       0x30 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x0000000010003320                weak_raw_vprintf
- .text          0x0000000010003350       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x00000000100032f8       0x30 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000100032f8                weak_raw_vprintf
+ .text          0x0000000010003328       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.rom_func_lookup
-                0x0000000010003360       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000010003360                rom_func_lookup
+                0x0000000010003338       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010003338                rom_func_lookup
  .text.rom_data_lookup
-                0x0000000010003370       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000010003370                rom_data_lookup
+                0x0000000010003348       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010003348                rom_data_lookup
  .text.rom_funcs_lookup
-                0x0000000010003380       0x44 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000010003380                rom_funcs_lookup
+                0x0000000010003358       0x44 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010003358                rom_funcs_lookup
  .text.__wrap___aeabi_idiv
-                0x00000000100033c4       0x50 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x00000000100033c4                __wrap___aeabi_idivmod
-                0x00000000100033c4                divmod_s32s32
-                0x00000000100033c4                div_s32s32
-                0x00000000100033c4                __wrap___aeabi_idiv
-                0x00000000100033cc                divmod_s32s32_unsafe
-                0x00000000100033f8                divmod_s32s32_savestate
+                0x000000001000339c       0x50 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x000000001000339c                __wrap___aeabi_idivmod
+                0x000000001000339c                divmod_s32s32
+                0x000000001000339c                div_s32s32
+                0x000000001000339c                __wrap___aeabi_idiv
+                0x00000000100033a4                divmod_s32s32_unsafe
+                0x00000000100033d0                divmod_s32s32_savestate
  .text.__wrap___aeabi_uidiv
-                0x0000000010003414       0x4c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x0000000010003414                __wrap___aeabi_uidiv
-                0x0000000010003414                __wrap___aeabi_uidivmod
-                0x0000000010003414                div_u32u32
-                0x0000000010003414                divmod_u32u32
-                0x000000001000341c                divmod_u32u32_unsafe
-                0x0000000010003444                divmod_u32u32_savestate
+                0x00000000100033ec       0x4c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x00000000100033ec                __wrap___aeabi_uidiv
+                0x00000000100033ec                __wrap___aeabi_uidivmod
+                0x00000000100033ec                div_u32u32
+                0x00000000100033ec                divmod_u32u32
+                0x00000000100033f4                divmod_u32u32_unsafe
+                0x000000001000341c                divmod_u32u32_savestate
  .text.__wrap___aeabi_ldiv
-                0x0000000010003460      0x424 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x0000000010003460                div_s64s64
-                0x0000000010003460                divmod_s64s64
-                0x0000000010003460                __wrap___aeabi_ldivmod
-                0x0000000010003490                div_u64u64
-                0x0000000010003490                divmod_u64u64
-                0x0000000010003490                __wrap___aeabi_uldivmod
-                0x00000000100034a0                divmod_u64u64_savestate
-                0x00000000100034c0                divmod_s64s64_unsafe
-                0x0000000010003548                divmod_u64u64_unsafe
+                0x0000000010003438      0x424 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x0000000010003438                div_s64s64
+                0x0000000010003438                divmod_s64s64
+                0x0000000010003438                __wrap___aeabi_ldivmod
+                0x0000000010003468                div_u64u64
+                0x0000000010003468                divmod_u64u64
+                0x0000000010003468                __wrap___aeabi_uldivmod
+                0x0000000010003478                divmod_u64u64_savestate
+                0x0000000010003498                divmod_s64s64_unsafe
+                0x0000000010003520                divmod_u64u64_unsafe
  .text.__wrap___aeabi_darithmetic
-                0x0000000010003884       0x80 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003884                __wrap___aeabi_drsub
-                0x000000001000388a                __wrap___aeabi_dsub
-                0x000000001000389c                __wrap___aeabi_dadd
-                0x00000000100038ae                __wrap___aeabi_ddiv
-                0x00000000100038ea                __wrap___aeabi_dmul
+                0x000000001000385c       0x80 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x000000001000385c                __wrap___aeabi_drsub
+                0x0000000010003862                __wrap___aeabi_dsub
+                0x0000000010003874                __wrap___aeabi_dadd
+                0x0000000010003886                __wrap___aeabi_ddiv
+                0x00000000100038c2                __wrap___aeabi_dmul
  .text.__wrap___aeabi_cdcmple
-                0x0000000010003904       0x6c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003904                __wrap___aeabi_cdrcmple
-                0x0000000010003914                __wrap___aeabi_cdcmple
-                0x0000000010003914                __wrap___aeabi_cdcmpeq
+                0x00000000100038dc       0x6c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x00000000100038dc                __wrap___aeabi_cdrcmple
+                0x00000000100038ec                __wrap___aeabi_cdcmple
+                0x00000000100038ec                __wrap___aeabi_cdcmpeq
  .text.__wrap___aeabi_dcmplt
-                0x0000000010003970        0xc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003970                __wrap___aeabi_dcmplt
+                0x0000000010003948        0xc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003948                __wrap___aeabi_dcmplt
  .text.__wrap___aeabi_dcmple
-                0x000000001000397c       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x000000001000397c                __wrap___aeabi_dcmple
+                0x0000000010003954       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003954                __wrap___aeabi_dcmple
  .text.__wrap___aeabi_dcmpge
-                0x000000001000398c       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x000000001000398c                __wrap___aeabi_dcmpge
+                0x0000000010003964       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003964                __wrap___aeabi_dcmpge
  .text.__wrap___aeabi_dcmpgt
-                0x000000001000399c        0xa CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x000000001000399c                __wrap___aeabi_dcmpgt
+                0x0000000010003974        0xa CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003974                __wrap___aeabi_dcmpgt
  .text.__wrap___aeabi_dcmpun
-                0x00000000100039a6       0x1c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x00000000100039a6                __wrap___aeabi_dcmpun
- *fill*         0x00000000100039c2        0x2 
+                0x000000001000397e       0x1c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x000000001000397e                __wrap___aeabi_dcmpun
+ *fill*         0x000000001000399a        0x2 
  .text.__wrap___aeabi_i2d
-                0x00000000100039c4       0x38 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x00000000100039c4                __wrap___aeabi_ui2d
-                0x00000000100039cc                __wrap___aeabi_i2d
+                0x000000001000399c       0x38 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x000000001000399c                __wrap___aeabi_ui2d
+                0x00000000100039a4                __wrap___aeabi_i2d
  .text.__wrap___aeabi_d2iz
-                0x00000000100039fc       0x48 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x00000000100039fc                __wrap___aeabi_d2iz
-                0x00000000100039fc                double2int_z
+                0x00000000100039d4       0x48 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x00000000100039d4                __wrap___aeabi_d2iz
+                0x00000000100039d4                double2int_z
  .text.__wrap___aeabi_d2uiz
-                0x0000000010003a44       0x18 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003a44                double2uint
-                0x0000000010003a44                __wrap___aeabi_d2uiz
+                0x0000000010003a1c       0x18 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003a1c                double2uint
+                0x0000000010003a1c                __wrap___aeabi_d2uiz
  .text.__aeabi_double_init
-                0x0000000010003a5c       0x94 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x0000000010003a5c                __aeabi_double_init
+                0x0000000010003a34       0x94 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x0000000010003a34                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x0000000010003af0       0x2c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010003af0                double_table_shim_on_use_helper
+                0x0000000010003ac8       0x2c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010003ac8                double_table_shim_on_use_helper
  .text.__wrap___aeabi_dsub
-                0x0000000010003b1c       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010003b1c                drsub_shim
-                0x0000000010003b22                dsub_shim
+                0x0000000010003af4       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010003af4                drsub_shim
+                0x0000000010003afa                dsub_shim
  .text.dadd_shim
-                0x0000000010003b2c      0x15c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010003b2c                dadd_shim
+                0x0000000010003b04      0x15c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010003b04                dadd_shim
  .text.dmul_shim
-                0x0000000010003c88      0x15c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010003c88                dmul_shim
+                0x0000000010003c60      0x15c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010003c60                dmul_shim
  .text.ddiv_shim
-                0x0000000010003de4      0x1b0 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010003de4                ddiv_shim
+                0x0000000010003dbc      0x1b0 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010003dbc                ddiv_shim
  .text.double2uint_shim
-                0x0000000010003f94        0xe CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010003f94                double2uint_shim
-                0x0000000010003f96                double2ufix_shim
- *fill*         0x0000000010003fa2        0x2 
+                0x0000000010003f6c        0xe CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010003f6c                double2uint_shim
+                0x0000000010003f6e                double2ufix_shim
+ *fill*         0x0000000010003f7a        0x2 
  .text.double2uint64_shim
-                0x0000000010003fa4       0x70 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010003fa4                double2uint64_shim
-                0x0000000010003fa6                double2ufix64_shim
-                0x0000000010003fc6                d2fix_a
+                0x0000000010003f7c       0x70 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010003f7c                double2uint64_shim
+                0x0000000010003f7e                double2ufix64_shim
+                0x0000000010003f9e                d2fix_a
  .text.dunpacks
-                0x0000000010004014       0x3c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010004014                dunpacks
+                0x0000000010003fec       0x3c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010003fec                dunpacks
  .text.__aeabi_lmul
-                0x0000000010004050       0x32 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-                0x0000000010004050                __wrap___aeabi_lmul
- *fill*         0x0000000010004082        0x2 
+                0x0000000010004028       0x32 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+                0x0000000010004028                __wrap___aeabi_lmul
+ *fill*         0x000000001000405a        0x2 
  .text.__aeabi_float_init
-                0x0000000010004084       0x64 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x0000000010004084                __aeabi_float_init
+                0x000000001000405c       0x64 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x000000001000405c                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x00000000100040e8       0x2c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x00000000100040e8                float_table_shim_on_use_helper
- .text          0x0000000010004114       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000010004114                __aeabi_mem_init
- .text.memset   0x0000000010004124        0xc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000010004124                __wrap_memset
- .text.memcpy   0x0000000010004130        0xc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000010004130                __wrap___aeabi_memcpy
-                0x0000000010004130                __wrap_memcpy
+                0x00000000100040c0       0x2c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x00000000100040c0                float_table_shim_on_use_helper
+ .text          0x00000000100040ec       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x00000000100040ec                __aeabi_mem_init
+ .text.memset   0x00000000100040fc        0xc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x00000000100040fc                __wrap_memset
+ .text.memcpy   0x0000000010004108        0xc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010004108                __wrap___aeabi_memcpy
+                0x0000000010004108                __wrap_memcpy
  .text.stdio_out_chars_no_crlf
-                0x000000001000413c       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004114       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_out_chars_crlf
-                0x000000001000414c       0xb4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004124       0xb4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_buffered_printer
-                0x0000000010004200       0x64 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000100041d8       0x64 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_put_string.isra.0
-                0x0000000010004264       0xfc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x000000001000423c       0xfc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.__wrap_putchar
-                0x0000000010004360       0x98 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004360                __wrap_putchar
+                0x0000000010004338       0x98 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004338                __wrap_putchar
  .text.__wrap_puts
-                0x00000000100043f8       0x3c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x00000000100043f8                __wrap_puts
+                0x00000000100043d0       0x3c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000100043d0                __wrap_puts
  .text.stdio_set_driver_enabled
-                0x0000000010004434       0x30 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004434                stdio_set_driver_enabled
+                0x000000001000440c       0x30 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x000000001000440c                stdio_set_driver_enabled
  .text.__wrap_vprintf
-                0x0000000010004464       0xd8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004464                __wrap_vprintf
+                0x000000001000443c       0xd8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x000000001000443c                __wrap_vprintf
  .text.__wrap_printf
-                0x000000001000453c       0x18 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x000000001000453c                __wrap_printf
+                0x0000000010004514       0x18 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004514                __wrap_printf
  .text.stdio_init_all
-                0x0000000010004554        0x8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004554                stdio_init_all
+                0x000000001000452c        0x8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x000000001000452c                stdio_init_all
  .text.resetd_init
-                0x000000001000455c        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004534        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_reset
-                0x0000000010004560        0xc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004538        0xc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_open
-                0x000000001000456c       0x28 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004544       0x28 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_xfer_cb
-                0x0000000010004594        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x000000001000456c        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_control_xfer_cb
-                0x0000000010004598       0x64 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004570       0x64 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.usbd_app_driver_get_cb
-                0x00000000100045fc        0xc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-                0x00000000100045fc                usbd_app_driver_get_cb
+                0x00000000100045d4        0xc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x00000000100045d4                usbd_app_driver_get_cb
  .text.tud_cdc_line_coding_cb
-                0x0000000010004608       0x34 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-                0x0000000010004608                tud_cdc_line_coding_cb
+                0x00000000100045e0       0x34 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x00000000100045e0                tud_cdc_line_coding_cb
  .text.stdio_usb_set_chars_available_callback
-                0x000000001000463c       0x14 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x000000001000463c                stdio_usb_set_chars_available_callback
- .text.usb_irq  0x0000000010004650       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010004614       0x14 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010004614                stdio_usb_set_chars_available_callback
+ .text.usb_irq  0x0000000010004628       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.timer_task
-                0x0000000010004660       0x54 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010004638       0x54 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.stdio_usb_in_chars
-                0x00000000100046b4       0x90 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x00000000100046b4                stdio_usb_in_chars
+                0x000000001000468c       0x90 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x000000001000468c                stdio_usb_in_chars
  .text.stdio_usb_out_chars
-                0x0000000010004744      0x100 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x000000001000471c      0x100 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.low_priority_worker_irq
-                0x0000000010004844       0xa8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x000000001000481c       0xa8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.tud_cdc_rx_cb
-                0x00000000100048ec       0x20 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x00000000100048ec                tud_cdc_rx_cb
+                0x00000000100048c4       0x20 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x00000000100048c4                tud_cdc_rx_cb
  .text.stdio_usb_init
-                0x000000001000490c       0xdc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x000000001000490c                stdio_usb_init
+                0x00000000100048e4       0xdc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x00000000100048e4                stdio_usb_init
  .text.tud_descriptor_device_cb
-                0x00000000100049e8        0x8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x00000000100049e8                tud_descriptor_device_cb
+                0x00000000100049c0        0x8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x00000000100049c0                tud_descriptor_device_cb
  .text.tud_descriptor_configuration_cb
-                0x00000000100049f0        0x8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x00000000100049f0                tud_descriptor_configuration_cb
+                0x00000000100049c8        0x8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x00000000100049c8                tud_descriptor_configuration_cb
  .text.tud_descriptor_string_cb
-                0x00000000100049f8       0x74 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x00000000100049f8                tud_descriptor_string_cb
+                0x00000000100049d0       0x74 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x00000000100049d0                tud_descriptor_string_cb
  .text.startup._retrieve_unique_id_on_boot
-                0x0000000010004a6c       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000000010004a44       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .text.pico_get_unique_board_id_string
-                0x0000000010004a7c      0x1a8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
-                0x0000000010004a7c                pico_get_unique_board_id_string
+                0x0000000010004a54      0x1a8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000000010004a54                pico_get_unique_board_id_string
  .text.flash_get_unique_id
-                0x0000000010004c24       0x40 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-                0x0000000010004c24                flash_get_unique_id
+                0x0000000010004bfc       0x40 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x0000000010004bfc                flash_get_unique_id
  .text.dcd_int_enable
-                0x0000000010004c64        0xc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010004c64                dcd_int_enable
+                0x0000000010004c3c        0xc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004c3c                dcd_int_enable
  .text.dcd_set_address
-                0x0000000010004c70       0x14 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010004c70                dcd_set_address
+                0x0000000010004c48       0x14 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004c48                dcd_set_address
  .text.dcd_connect
-                0x0000000010004c84       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010004c84                dcd_connect
+                0x0000000010004c5c       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004c5c                dcd_connect
  .text.dcd_init
-                0x0000000010004c94       0x98 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010004c94                dcd_init
+                0x0000000010004c6c       0x98 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004c6c                dcd_init
  .text.dcd_edpt0_status_complete
-                0x0000000010004d2c       0x1c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010004d2c                dcd_edpt0_status_complete
+                0x0000000010004d04       0x1c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004d04                dcd_edpt0_status_complete
  .text.dcd_edpt_open
-                0x0000000010004d48      0x108 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010004d48                dcd_edpt_open
+                0x0000000010004d20      0x108 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004d20                dcd_edpt_open
  .text.dcd_edpt_close_all
-                0x0000000010004e50        0x8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010004e50                dcd_edpt_close_all
+                0x0000000010004e28        0x8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004e28                dcd_edpt_close_all
  .text.dcd_edpt_xfer
-                0x0000000010004e58       0x24 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010004e58                dcd_edpt_xfer
+                0x0000000010004e30       0x24 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004e30                dcd_edpt_xfer
  .text.dcd_edpt_stall
-                0x0000000010004e7c       0x38 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010004e7c                dcd_edpt_stall
+                0x0000000010004e54       0x38 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004e54                dcd_edpt_stall
  .text.dcd_edpt_clear_stall
-                0x0000000010004eb4       0x30 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010004eb4                dcd_edpt_clear_stall
+                0x0000000010004e8c       0x30 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004e8c                dcd_edpt_clear_stall
  .text.rp2040_usb_init
-                0x0000000010004ee4       0x4c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x0000000010004ee4                rp2040_usb_init
+                0x0000000010004ebc       0x4c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010004ebc                rp2040_usb_init
  .text.hw_endpoint_xfer_start
-                0x0000000010004f30       0x50 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x0000000010004f30                hw_endpoint_xfer_start
+                0x0000000010004f08       0x50 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010004f08                hw_endpoint_xfer_start
  .text.tud_mounted
-                0x0000000010004f80       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010004f80                tud_mounted
+                0x0000000010004f58       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010004f58                tud_mounted
  .text.tud_suspended
-                0x0000000010004f90       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010004f90                tud_suspended
+                0x0000000010004f68       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010004f68                tud_suspended
  .text.tud_inited
-                0x0000000010004fa0       0x14 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010004fa0                tud_inited
+                0x0000000010004f78       0x14 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010004f78                tud_inited
  .text.tud_init
-                0x0000000010004fb4       0xe4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010004fb4                tud_init
+                0x0000000010004f8c       0xe4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010004f8c                tud_init
  .text.tud_task_ext
-                0x0000000010005098      0x854 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005098                tud_task_ext
+                0x0000000010005070      0x854 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005070                tud_task_ext
  .text.usbd_open_edpt_pair
-                0x00000000100058ec       0x9c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100058ec                usbd_open_edpt_pair
+                0x00000000100058c4       0x9c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100058c4                usbd_open_edpt_pair
  .text.usbd_defer_func
-                0x0000000010005988       0x48 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005988                usbd_defer_func
+                0x0000000010005960       0x48 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005960                usbd_defer_func
  .text.usbd_edpt_open
-                0x00000000100059d0       0x34 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100059d0                usbd_edpt_open
+                0x00000000100059a8       0x34 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100059a8                usbd_edpt_open
  .text.usbd_edpt_claim
-                0x0000000010005a04       0x28 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005a04                usbd_edpt_claim
+                0x00000000100059dc       0x28 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100059dc                usbd_edpt_claim
  .text.usbd_edpt_release
-                0x0000000010005a2c       0x28 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005a2c                usbd_edpt_release
+                0x0000000010005a04       0x28 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005a04                usbd_edpt_release
  .text.usbd_edpt_xfer
-                0x0000000010005a54       0x4c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005a54                usbd_edpt_xfer
+                0x0000000010005a2c       0x4c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005a2c                usbd_edpt_xfer
  .text.tud_control_status
-                0x0000000010005aa0       0x30 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010005aa0                tud_control_status
+                0x0000000010005a78       0x30 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010005a78                tud_control_status
  .text.tud_control_xfer
-                0x0000000010005ad0       0xbc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010005ad0                tud_control_xfer
+                0x0000000010005aa8       0xbc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010005aa8                tud_control_xfer
  .text.usbd_control_reset
-                0x0000000010005b8c       0x14 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010005b8c                usbd_control_reset
+                0x0000000010005b64       0x14 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010005b64                usbd_control_reset
  .text.usbd_control_set_complete_callback
-                0x0000000010005ba0        0xc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010005ba0                usbd_control_set_complete_callback
+                0x0000000010005b78        0xc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010005b78                usbd_control_set_complete_callback
  .text.usbd_control_set_request
-                0x0000000010005bac       0x1c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010005bac                usbd_control_set_request
+                0x0000000010005b84       0x1c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010005b84                usbd_control_set_request
  .text.usbd_control_xfer_cb
-                0x0000000010005bc8       0xfc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010005bc8                usbd_control_xfer_cb
+                0x0000000010005ba0       0xfc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010005ba0                usbd_control_xfer_cb
  .text.tud_cdc_n_connected
-                0x0000000010005cc4       0x30 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010005cc4                tud_cdc_n_connected
+                0x0000000010005c9c       0x30 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010005c9c                tud_cdc_n_connected
  .text.tud_cdc_n_available
-                0x0000000010005cf4       0x18 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010005cf4                tud_cdc_n_available
+                0x0000000010005ccc       0x18 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010005ccc                tud_cdc_n_available
  .text.tud_cdc_n_read
-                0x0000000010005d0c       0x70 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010005d0c                tud_cdc_n_read
+                0x0000000010005ce4       0x70 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010005ce4                tud_cdc_n_read
  .text.tud_cdc_n_write_flush
-                0x0000000010005d7c       0x78 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010005d7c                tud_cdc_n_write_flush
+                0x0000000010005d54       0x78 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010005d54                tud_cdc_n_write_flush
  .text.tud_cdc_n_write
-                0x0000000010005df4       0x34 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010005df4                tud_cdc_n_write
+                0x0000000010005dcc       0x34 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010005dcc                tud_cdc_n_write
  .text.tud_cdc_n_write_available
-                0x0000000010005e28       0x18 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010005e28                tud_cdc_n_write_available
+                0x0000000010005e00       0x18 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010005e00                tud_cdc_n_write_available
  .text.cdcd_init
-                0x0000000010005e40       0x7c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010005e40                cdcd_init
+                0x0000000010005e18       0x7c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010005e18                cdcd_init
  .text.cdcd_reset
-                0x0000000010005ebc       0x2c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010005ebc                cdcd_reset
+                0x0000000010005e94       0x2c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010005e94                cdcd_reset
  .text.cdcd_open
-                0x0000000010005ee8       0xe8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010005ee8                cdcd_open
+                0x0000000010005ec0       0xe8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010005ec0                cdcd_open
  .text.cdcd_control_xfer_cb
-                0x0000000010005fd0       0xe4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010005fd0                cdcd_control_xfer_cb
+                0x0000000010005fa8       0xe4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010005fa8                cdcd_control_xfer_cb
  .text.cdcd_xfer_cb
-                0x00000000100060b4      0x148 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000100060b4                cdcd_xfer_cb
+                0x000000001000608c      0x148 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x000000001000608c                cdcd_xfer_cb
  .text.tusb_init
-                0x00000000100061fc        0xc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x00000000100061fc                tusb_init
+                0x00000000100061d4        0xc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x00000000100061d4                tusb_init
  .text.tusb_inited
-                0x0000000010006208        0x8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010006208                tusb_inited
+                0x00000000100061e0        0x8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x00000000100061e0                tusb_inited
  .text.tu_edpt_claim
-                0x0000000010006210       0x50 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010006210                tu_edpt_claim
+                0x00000000100061e8       0x50 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x00000000100061e8                tu_edpt_claim
  .text.tu_edpt_release
-                0x0000000010006260       0x38 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010006260                tu_edpt_release
+                0x0000000010006238       0x38 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x0000000010006238                tu_edpt_release
  .text.tu_edpt_validate
-                0x0000000010006298       0x78 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010006298                tu_edpt_validate
+                0x0000000010006270       0x78 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x0000000010006270                tu_edpt_validate
  .text.tu_edpt_bind_driver
-                0x0000000010006310       0x34 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010006310                tu_edpt_bind_driver
+                0x00000000100062e8       0x34 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x00000000100062e8                tu_edpt_bind_driver
  .text.tu_fifo_config
-                0x0000000010006344       0x70 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006344                tu_fifo_config
+                0x000000001000631c       0x70 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x000000001000631c                tu_fifo_config
  .text.tu_fifo_count
-                0x00000000100063b4       0x2c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x00000000100063b4                tu_fifo_count
+                0x000000001000638c       0x2c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x000000001000638c                tu_fifo_count
  .text.tu_fifo_empty
-                0x00000000100063e0       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x00000000100063e0                tu_fifo_empty
+                0x00000000100063b8       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100063b8                tu_fifo_empty
  .text.tu_fifo_remaining
-                0x00000000100063f0       0x2c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x00000000100063f0                tu_fifo_remaining
+                0x00000000100063c8       0x2c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100063c8                tu_fifo_remaining
  .text.tu_fifo_read
-                0x000000001000641c       0xa0 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x000000001000641c                tu_fifo_read
+                0x00000000100063f4       0xa0 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100063f4                tu_fifo_read
  .text.tu_fifo_read_n
-                0x00000000100064bc       0xec CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x00000000100064bc                tu_fifo_read_n
+                0x0000000010006494       0xec CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006494                tu_fifo_read_n
  .text.tu_fifo_write
-                0x00000000100065a8       0x88 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x00000000100065a8                tu_fifo_write
+                0x0000000010006580       0x88 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006580                tu_fifo_write
  .text.tu_fifo_write_n
-                0x0000000010006630      0x168 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006630                tu_fifo_write_n
+                0x0000000010006608      0x168 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006608                tu_fifo_write_n
  .text.tu_fifo_clear
-                0x0000000010006798       0x40 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006798                tu_fifo_clear
+                0x0000000010006770       0x40 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006770                tu_fifo_clear
  .text.tu_fifo_set_overwritable
-                0x00000000100067d8       0x48 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x00000000100067d8                tu_fifo_set_overwritable
+                0x00000000100067b0       0x48 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100067b0                tu_fifo_set_overwritable
  .text.adc_init
-                0x0000000010006820       0x38 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
-                0x0000000010006820                adc_init
- .text          0x0000000010006858       0x5c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
-                0x0000000010006858                strlen
+                0x00000000100067f8       0x38 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+                0x00000000100067f8                adc_init
+ .text          0x0000000010006830       0x5c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+                0x0000000010006830                strlen
  *(.fini)
- .fini          0x00000000100068b4        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
-                0x00000000100068b4                _fini
- .fini.__stub   0x00000000100068b8       0xe0 linker stubs
+ .fini          0x000000001000688c        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                0x000000001000688c                _fini
+ .fini.__stub   0x0000000010006890       0xe0 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -2109,130 +2105,130 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.eh_frame*)
- .eh_frame      0x0000000010006998        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x0000000010006998                . = ALIGN (0x4)
+ .eh_frame      0x0000000010006970        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000010006970                . = ALIGN (0x4)
 
-.glue_7         0x0000000010006998        0x0
- .glue_7        0x0000000010006998        0x0 linker stubs
+.glue_7         0x0000000010006970        0x0
+ .glue_7        0x0000000010006970        0x0 linker stubs
 
-.glue_7t        0x0000000010006998        0x0
- .glue_7t       0x0000000010006998        0x0 linker stubs
+.glue_7t        0x0000000010006970        0x0
+ .glue_7t       0x0000000010006970        0x0 linker stubs
 
-.vfp11_veneer   0x0000000010006998        0x0
- .vfp11_veneer  0x0000000010006998        0x0 linker stubs
+.vfp11_veneer   0x0000000010006970        0x0
+ .vfp11_veneer  0x0000000010006970        0x0 linker stubs
 
-.v4_bx          0x0000000010006998        0x0
- .v4_bx         0x0000000010006998        0x0 linker stubs
+.v4_bx          0x0000000010006970        0x0
+ .v4_bx         0x0000000010006970        0x0 linker stubs
 
-.iplt           0x0000000010006998        0x0
- .iplt          0x0000000010006998        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x0000000010006970        0x0
+ .iplt          0x0000000010006970        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x0000000010006998      0x538
+.rodata         0x0000000010006970      0x538
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.str1.4
-                0x0000000010006998        0x7 CMakeFiles/audio_modem.dir/audio_modem.cpp.obj
- *fill*         0x000000001000699f        0x1 
+                0x0000000010006970        0x7 CMakeFiles/audio_modem.dir/audio_modem.cpp.obj
+ *fill*         0x0000000010006977        0x1 
  .rodata.spin_lock_claim_unused.str1.4
-                0x00000000100069a0       0x1b CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- *fill*         0x00000000100069bb        0x1 
+                0x0000000010006978       0x1b CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ *fill*         0x0000000010006993        0x1 
  .rodata.user_irq_claim_unused.str1.4
-                0x00000000100069bc       0x1b CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x00000000100069d7        0x1 
+                0x0000000010006994       0x1b CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x00000000100069af        0x1 
  .rodata.hardware_alarm_claim.str1.4
-                0x00000000100069d8       0x22 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x00000000100069fa        0x2 
+                0x00000000100069b0       0x22 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x00000000100069d2        0x2 
  .rodata.panic.str1.4
-                0x00000000100069fc       0x12 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x0000000010006a0e        0x2 
+                0x00000000100069d4       0x12 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x00000000100069e6        0x2 
  .rodata.hard_assertion_failure.str1.4
-                0x0000000010006a10        0xc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x00000000100069e8        0xc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata._ftoa.str1.4
-                0x0000000010006a1c       0x15 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x0000000010006a31        0x3 
+                0x00000000100069f4       0x15 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x0000000010006a09        0x3 
  .rodata._vsnprintf
-                0x0000000010006a34      0x1e0 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x0000000010006c14        0x4 
+                0x0000000010006a0c      0x1e0 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x0000000010006bec        0x4 
  .rodata.pow10.0
-                0x0000000010006c18       0x50 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010006bf0       0x50 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .rodata.str1.4
-                0x0000000010006c68       0x44 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010006c40       0x44 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_44
-                0x0000000010006cac        0xc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010006c84        0xc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_56
-                0x0000000010006cb8        0xc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010006c90        0xc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_75
-                0x0000000010006cc4        0xc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010006c9c        0xc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_81
-                0x0000000010006cd0        0xc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010006ca8        0xc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.crlf_str.0
-                0x0000000010006cdc        0x2 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x0000000010006cde        0x2 
+                0x0000000010006cb4        0x2 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x0000000010006cb6        0x2 
  .rodata._resetd_driver
-                0x0000000010006ce0       0x18 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010006cb8       0x18 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .rodata.str1.4
-                0x0000000010006cf8       0x13 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- *fill*         0x0000000010006d0b        0x1 
+                0x0000000010006cd0       0x13 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ *fill*         0x0000000010006ce3        0x1 
  .rodata.__bi_182.0
-                0x0000000010006d0c        0xc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010006ce4        0xc CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .rodata.str1.4
-                0x0000000010006d18       0x2a CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- *fill*         0x0000000010006d42        0x2 
+                0x0000000010006cf0       0x2a CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ *fill*         0x0000000010006d1a        0x2 
  .rodata.usbd_desc_cfg
-                0x0000000010006d44       0x54 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010006d1c       0x54 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.usbd_desc_device
-                0x0000000010006d98       0x12 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- *fill*         0x0000000010006daa        0x2 
+                0x0000000010006d70       0x12 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ *fill*         0x0000000010006d82        0x2 
  .rodata.usbd_desc_str
-                0x0000000010006dac       0x18 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010006d84       0x18 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.str1.4
-                0x0000000010006dc4       0x14 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010006d9c       0x14 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .rodata.str1.4
-                0x0000000010006dd8       0x53 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- *fill*         0x0000000010006e2b        0x1 
+                0x0000000010006db0       0x53 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ *fill*         0x0000000010006e03        0x1 
  .rodata.tud_task_ext
-                0x0000000010006e2c       0x8c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010006e04       0x8c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .rodata._usbd_driver
-                0x0000000010006eb8       0x18 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010006ed0                . = ALIGN (0x4)
+                0x0000000010006e90       0x18 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010006ea8                . = ALIGN (0x4)
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x0000000010006ed0                . = ALIGN (0x4)
+                0x0000000010006ea8                . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000010006ed0                __exidx_start = .
+                0x0000000010006ea8                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x0000000010006ed0                __exidx_end = .
-                0x0000000010006ed0                . = ALIGN (0x4)
-                0x0000000010006ed0                __binary_info_start = .
+                0x0000000010006ea8                __exidx_end = .
+                0x0000000010006ea8                . = ALIGN (0x4)
+                0x0000000010006ea8                __binary_info_start = .
 
-.binary_info    0x0000000010006ed0       0x24
+.binary_info    0x0000000010006ea8       0x24
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr22
-                0x0000000010006ed0        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010006ea8        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr30
-                0x0000000010006ed4        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010006eac        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr38
-                0x0000000010006ed8        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010006eb0        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr44
-                0x0000000010006edc        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010006eb4        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr50
-                0x0000000010006ee0        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010006eb8        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr56
-                0x0000000010006ee4        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010006ebc        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr75
-                0x0000000010006ee8        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010006ec0        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr81
-                0x0000000010006eec        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010006ec4        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  *(.binary_info.*)
  .binary_info.__bi_ptr182
-                0x0000000010006ef0        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000010006ef4                __binary_info_end = .
+                0x0000000010006ec8        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010006ecc                __binary_info_end = .
 
-.rel.dyn        0x0000000010006ef4        0x0
- .rel.iplt      0x0000000010006ef4        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x0000000010006ef4                . = ALIGN (0x4)
+.rel.dyn        0x0000000010006ecc        0x0
+ .rel.iplt      0x0000000010006ecc        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000010006ecc                . = ALIGN (0x4)
 
 .ram_vector_table
                 0x0000000020000000       0xc0
@@ -2241,7 +2237,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x0000000020000000       0xc0 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x0000000020000000                ram_vector_table
 
-.data           0x00000000200000c0      0xf7c load address 0x0000000010006ef4
+.data           0x00000000200000c0      0xf7c load address 0x0000000010006ecc
                 0x00000000200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -2379,38 +2375,38 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(.jcr)
                 0x000000002000103c                . = ALIGN (0x4)
                 0x000000002000103c                __data_end__ = .
-                0x0000000010006ef4                __etext = LOADADDR (.data)
+                0x0000000010006ecc                __etext = LOADADDR (.data)
 
 .tm_clone_table
-                0x000000002000103c        0x0 load address 0x0000000010007e70
+                0x000000002000103c        0x0 load address 0x0000000010007e48
  .tm_clone_table
                 0x000000002000103c        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x000000002000103c        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x000000002000103c        0x0 load address 0x0000000010007e70
+.igot.plt       0x000000002000103c        0x0 load address 0x0000000010007e48
  .igot.plt      0x000000002000103c        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x000000002000103c        0x0 load address 0x0000000010007e70
+                0x000000002000103c        0x0 load address 0x0000000010007e48
                 0x000000002000103c                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x0000000020040000        0x0 load address 0x0000000010007e70
+.scratch_x      0x0000000020040000        0x0 load address 0x0000000010007e48
                 0x0000000020040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x0000000020040000                . = ALIGN (0x4)
                 0x0000000020040000                __scratch_x_end__ = .
-                0x0000000010007e70                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x0000000010007e48                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x0000000020041000        0x0 load address 0x0000000010007e70
+.scratch_y      0x0000000020041000        0x0 load address 0x0000000010007e48
                 0x0000000020041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x0000000020041000                . = ALIGN (0x4)
                 0x0000000020041000                __scratch_y_end__ = .
-                0x0000000010007e70                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x0000000010007e48                __scratch_y_source__ = LOADADDR (.scratch_y)
 
-.bss            0x0000000020001040      0xda8
+.bss            0x0000000020001040      0xd90
                 0x0000000020001040                . = ALIGN (0x4)
                 0x0000000020001040                __bss_start__ = .
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.bss*)))
@@ -2418,115 +2414,108 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x0000000020001040      0x100 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_time/time.c.obj
  .bss.last_avail_time.1
                 0x0000000020001140        0x8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- .bss.lastcallt
-                0x0000000020001148        0x8 CMakeFiles/audio_modem.dir/audio_modem.cpp.obj
-                0x0000000020001148                lastcallt
- .bss.lastcallt2
-                0x0000000020001150        0x8 CMakeFiles/audio_modem.dir/audio_modem.cpp.obj
-                0x0000000020001150                lastcallt2
- .bss.sd_table  0x0000000020001158      0x100 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x0000000020001158                sd_table
- .bss.sf_table  0x0000000020001258      0x100 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x0000000020001258                sf_table
- .bss.timers    0x0000000020001358        0x8 CMakeFiles/audio_modem.dir/audio_modem.cpp.obj
-                0x0000000020001358                timers
- .bss.tt        0x0000000020001360        0x8 CMakeFiles/audio_modem.dir/audio_modem.cpp.obj
-                0x0000000020001360                tt
- .bss           0x0000000020001368       0x1c /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .bss.sd_table  0x0000000020001148      0x100 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x0000000020001148                sd_table
+ .bss.sf_table  0x0000000020001248      0x100 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x0000000020001248                sf_table
+ .bss.wave_timer
+                0x0000000020001348        0x8 CMakeFiles/audio_modem.dir/audio_modem.cpp.obj
+                0x0000000020001348                wave_timer
+ .bss           0x0000000020001350       0x1c /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
  .bss._app_driver
-                0x0000000020001384        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x000000002000136c        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .bss._cdcd_itf
-                0x0000000020001388      0x2c8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000020001370      0x2c8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
  .bss._ctrl_xfer
-                0x0000000020001650       0x14 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000020001638       0x14 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
  .bss._ubsd_mutexdef
-                0x0000000020001664        0x8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x000000002000164c        0x8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .bss._usbd_ctrl_buf
-                0x000000002000166c       0x40 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000020001654       0x40 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
  .bss._usbd_dev
-                0x00000000200016ac       0x53 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
- *fill*         0x00000000200016ff        0x1 
+                0x0000000020001694       0x53 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+ *fill*         0x00000000200016e7        0x1 
  .bss._usbd_mutex
-                0x0000000020001700        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
- .bss._usbd_q   0x0000000020001704        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000200016e8        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+ .bss._usbd_q   0x00000000200016ec        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .bss._usbd_qdef_buf
-                0x0000000020001708       0xc0 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000020001708                _usbd_qdef_buf
+                0x00000000200016f0       0xc0 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000200016f0                _usbd_qdef_buf
  .bss.alarm_callbacks
-                0x00000000200017c8       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000200017b0       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .bss.boot2_copyout
-                0x00000000200017d8      0x100 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x00000000200017c0      0x100 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
  .bss.chars_available_callback
-                0x00000000200018d8        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x00000000200018c0        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .bss.chars_available_param
-                0x00000000200018dc        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- .bss.claimed   0x00000000200018e0        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x00000000200018c4        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ .bss.claimed   0x00000000200018c8        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
  .bss.configured_freq
-                0x00000000200018e4       0x28 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x00000000200018cc       0x28 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .bss.default_alarm_pool_entry_ids_high
-                0x000000002000190c       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000200018f4       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_time/time.c.obj
  .bss.default_alarm_pool_heap_nodes
-                0x000000002000191c       0x30 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000020001904       0x30 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_time/time.c.obj
  .bss.desc_str.0
-                0x000000002000194c       0x28 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- .bss.drivers   0x0000000020001974        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000020001934       0x28 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ .bss.drivers   0x000000002000195c        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .bss.e15_last_sof
-                0x0000000020001978        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x0000000020001978                e15_last_sof
- .bss.filter    0x000000002000197c        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000020001960        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000020001960                e15_last_sof
+ .bss.filter    0x0000000020001964        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .bss.hw_endpoints
-                0x0000000020001980      0x400 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000020001968      0x400 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .bss.lazy_vsnprintf
-                0x0000000020001d80        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000020001d68        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .bss.load_value
-                0x0000000020001d84        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x0000000020001d6c        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
  .bss.next_buffer_ptr
-                0x0000000020001d88        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000020001d70        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .bss.one_shot_timer_crit_sec
-                0x0000000020001d8c        0x8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- .bss.pools     0x0000000020001d94       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000020001d74        0x8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ .bss.pools     0x0000000020001d7c       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_time/time.c.obj
  .bss.retrieved_id
-                0x0000000020001da4        0x8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000000020001d8c        0x8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .bss.sf_clz_func
-                0x0000000020001dac        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x0000000020001dac                sf_clz_func
+                0x0000000020001d94        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x0000000020001d94                sf_clz_func
  .bss.sleep_notifier
-                0x0000000020001db0        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000020001d98        0x4 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/common/pico_time/time.c.obj
  .bss.stdio_usb_mutex
-                0x0000000020001db4        0x8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000020001d9c        0x8 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .bss.target_hi
-                0x0000000020001dbc       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000020001da4       0x10 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .bss.usbd_serial_str
-                0x0000000020001dcc       0x11 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000020001db4       0x11 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .bss._app_driver_count
-                0x0000000020001ddd        0x1 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000020001dc5        0x1 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .bss._sof_enable
-                0x0000000020001dde        0x1 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000020001dc6        0x1 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .bss.boot2_copyout_valid
-                0x0000000020001ddf        0x1 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .bss.claimed   0x0000000020001de0        0x1 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000020001dc7        0x1 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+ .bss.claimed   0x0000000020001dc8        0x1 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .bss.irq_hander_chain_free_slot_head
-                0x0000000020001de1        0x1 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .bss.itf_num   0x0000000020001de2        0x1 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000020001dc9        0x1 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .bss.itf_num   0x0000000020001dca        0x1 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .bss.low_priority_irq_num
-                0x0000000020001de3        0x1 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000020001dcb        0x1 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .bss.one_shot_timer_pending
-                0x0000000020001de4        0x1 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000020001dcc        0x1 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .bss.timer_callbacks_pending
-                0x0000000020001de5        0x1 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000020001dcd        0x1 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .bss.user_irq_claimed
-                0x0000000020001de6        0x1 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000020001dce        0x1 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  *(COMMON)
-                0x0000000020001de8                . = ALIGN (0x4)
- *fill*         0x0000000020001de7        0x1 
-                0x0000000020001de8                __bss_end__ = .
+                0x0000000020001dd0                . = ALIGN (0x4)
+ *fill*         0x0000000020001dcf        0x1 
+                0x0000000020001dd0                __bss_end__ = .
 
-.heap           0x0000000020001de8      0x800
-                0x0000000020001de8                __end__ = .
-                0x0000000020001de8                end = __end__
+.heap           0x0000000020001dd0      0x800
+                0x0000000020001dd0                __end__ = .
+                0x0000000020001dd0                end = __end__
  *(.heap*)
- .heap          0x0000000020001de8      0x800 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
-                0x00000000200025e8                __HeapLimit = .
+ .heap          0x0000000020001dd0      0x800 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+                0x00000000200025d0                __HeapLimit = .
 
 .stack1_dummy   0x0000000020040000      0x800
  *(.stack1*)
@@ -2536,8 +2525,8 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(.stack*)
  .stack         0x0000000020041000      0x800 CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x0000000010007e70        0x0
-                0x0000000010007e70                PROVIDE (__flash_binary_end = .)
+.flash_end      0x0000000010007e48        0x0
+                0x0000000010007e48                PROVIDE (__flash_binary_end = .)
                 0x0000000020040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x0000000020041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x0000000020042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -2617,7 +2606,7 @@ LOAD CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/lib/tinyusb/s
 LOAD CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 LOAD CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
 LOAD CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
-LOAD /tmp/ccSNhfjP.o
+LOAD /tmp/ccKoKD0I.o
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -2737,7 +2726,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000000000000800       0x2c CMakeFiles/audio_modem.dir/home/elton/Downloads/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
  .ARM.attributes
-                0x000000000000082c       0x22 /tmp/ccSNhfjP.o
+                0x000000000000082c       0x22 /tmp/ccKoKD0I.o
  .ARM.attributes
                 0x000000000000084e       0x1e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
