@@ -7,7 +7,7 @@
 #include<list>
 #define forx(i, sizemax) for(int i = 0; i <= sizemax; i++)
 #define SAMPLE_SIZE 10000
-
+#define DEBUG
 typedef struct {
     uint16_t bit0min;
     uint16_t bit0max;    
@@ -18,31 +18,31 @@ typedef struct {
 void sort(uint16_t*ptr, uint16_t len) {
 rpt:
     uint16_t aux;
-    bool needsRepeat = false;
+    bool needs_repeat = false;
     for(uint16_t i = 0; i <= len-1; i++) {
         if (ptr[i] < ptr[i+1]) {
             aux = ptr[i];
             ptr[i] = ptr[i+1];
             ptr[i+1] = aux;
-            needsRepeat = true;
+            needs_repeat = true;
         }
     }
-    if (needsRepeat) {
+    if (needs_repeat) {
         goto rpt;
     }
 }
 
-uint64_t tt = time_us_64();
+uint64_t wave_timer = time_us_64();
 
 void store_start_time(uint16_t val) {    
     if (val == 3000) {
-        tt = time_us_64();
+        wave_timer = time_us_64();
     }
 }
 
 uint64_t get_start_end_diff(uint16_t val) {
     if(val == 2500) {
-        return time_us_64()-tt;
+        return time_us_64()-wave_timer;
     }
     return 0;
 }
@@ -61,6 +61,7 @@ void __not_in_flash_func(rx_func)() {
         if (adc_val > 3000) {
             adc_val = 3000;
         }
+
         //detect up start counter
         if (adc_val > 2500) {
             store_start_time(adc_val);
@@ -110,7 +111,7 @@ int main() {
     gpio_init(25);
     gpio_set_dir(25, GPIO_OUT);
     gpio_put(25, 1);
-    
+
     adc_init();
     adc_select_input(2);
     adc_gpio_init(28);
